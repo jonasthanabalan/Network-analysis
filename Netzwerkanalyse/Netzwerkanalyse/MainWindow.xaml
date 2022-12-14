@@ -5,16 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Netzwerkanalyse"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="432" Margin="282,0,0,0" VerticalAlignment="Top" Width="518" Source="/2022-12-14 09_56_15-Window.png"/>
-        <Button x:Name="Resistences" Content="Resistences" Height="25" Width="100" HorizontalAlignment="Left" Margin="20, 20, 20, 110" VerticalAlignment="Bottom" Click="Resistences_Click"/>
-        <Button x:Name="start" Content="Start" Height="25" Width="100" HorizontalAlignment="Left" Margin="20,20" VerticalAlignment="Bottom"/>
-        <Button x:Name="help" Content="Help" Height="25" Width="100" HorizontalAlignment="Left" Margin="20,20, 20, 65" VerticalAlignment="Bottom"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="213*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="563*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="432" Margin="45,0,0,0" VerticalAlignment="Top" Width="518" Source="/2022-12-14 09_56_15-Window.png" Grid.Column="2"/>
+        <Button x:Name="Resistences" Content="Resistences" Height="25" Width="100" HorizontalAlignment="Left" Margin="20,0,0,110" VerticalAlignment="Bottom" Click="Resistences_Click"/>
+        <Button x:Name="start" Content="Start" Height="25" Width="100" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Bottom"/>
+        <Button x:Name="help" Content="Help" Height="25" Width="100" HorizontalAlignment="Left" Margin="20,0,0,65" VerticalAlignment="Bottom"/>
         <Label Content="Please type in your R4x :" Height="25" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="R4x" HorizontalAlignment="Left" Margin="25,45, 20, 20" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Please type in your Uq1:" HorizontalAlignment="Left" Margin="20,80,20,20" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="25, 105, 20, 20" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="R4x" HorizontalAlignment="Left" Margin="25,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Please type in your Uq1:" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="25,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
